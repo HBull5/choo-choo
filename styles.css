@@ -1,0 +1,120 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fade-in-start {
+    opacity: 0; 
+    transition: opacity 3s;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 50px; 
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+/* Nav */
+#nav {
+    background-color: #444; 
+    color: #fff;
+    padding: 1em;
+}
+
+#nav .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex; 
+    color: #fff; 
+    list-style: none;
+}
+
+#nav ul li {
+    color: #fff;
+    padding: 1em;
+}
+
+/* Main */
+#main {
+    height: 100vh;
+}
+
+#main .container {
+    height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Primary */
+#primary {
+    height: 100vh;
+    background-color: #444;
+    color: #fff;
+}
+
+#primary .container {
+    height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#primary .container .icons {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+#primary .container .icon {
+    font-size: 100px;
+    margin: 0 1em;
+}
+
+/* Footer */
+#footer {
+    padding: 1.5em;
+}
+
+#footer .container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}

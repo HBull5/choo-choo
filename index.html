@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="locomotive-scroll.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Custom Scripts -->
+    <script src="app.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/47ace9daa2.js" crossorigin="anonymous"></script>
+    <title>Choo Choo</title>
+</head>
+<!-- Terrible Idea but just for learning -->
+<body data-scroll-container>
+    <!-- Nav -->
+    <nav id="nav" data-scroll-section>
+        <div class="container">
+            <h2>My Website</h2>
+
+            <ul>
+                <a href="#main"><li>Main</li></a>
+                <a href="#primary"><li>Primary</li></a>
+                <a href="#secondary"><li>Secondary</li></a>
+                <a href="#footer"><li>Footer</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="main" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="1.75">
+            <h1>My Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum sapiente provident sequi eaque sed quasi, consequuntur dolore fugit et ullam id laboriosam deserunt quam eius praesentium amet rem tenetur. Amet suscipit eos necessitatibus vel aspernatur. Ratione vel nemo blanditiis, aspernatur doloribus possimus! Voluptate fugit, adipisci dolorem facilis tenetur modi!</p>
+        </div>
+    </section>
+
+    <!-- Primary -->
+    <section id="primary" data-scroll-section>
+        <div class="container" data-scroll data-scroll-speed="1.75">
+            <h2>Things N' Stuff</h2>
+
+            <div class="icons fade-in-start" data-scroll data-scroll-class="fade-in">
+                <div class="icon">
+                    <i class="fas fa-bomb"></i>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-biohazard"></i>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+            </div>
+
+            <p class="mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos, quos mollitia hic nesciunt nam totam voluptate eum quae quis aspernatur sint maiores nostrum corrupti tempora quaerat ullam! Nulla, voluptas provident dolor sequi explicabo sit eius architecto, expedita rerum maiores ducimus temporibus unde fugit, illum repudiandae. Recusandae at minima odit voluptatum perferendis unde dolorem, suscipit modi dicta ipsam error aliquid sequi natus atque magnam exercitationem velit provident accusantium dolores. Ducimus quia sunt maiores qui harum pariatur fuga, quisquam nam dolor error modi dignissimos aliquid voluptas accusantium atque. Libero, laudantium, odio assumenda dolores dolorum, numquam autem aspernatur soluta esse temporibus veritatis?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda qui tempora autem mollitia, nisi facilis explicabo consectetur totam atque soluta doloremque rem veniam voluptatem dolores itaque, reprehenderit incidunt ipsa voluptate fuga obcaecati et nulla voluptates! Et laboriosam ab fugit?</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" data-scroll-section>
+        <div class="container">
+            <h3>Footer &copy; 2022</h3>
+        </div>
+    </section>
+
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector( '[data-scroll-container]' ), 
+            smooth: true,
+            multiplier: 1
+        });
+    </script>
+</body>
+</html>
